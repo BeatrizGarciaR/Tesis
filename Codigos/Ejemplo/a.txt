@@ -1,0 +1,450 @@
+ T 2
+0 0 1021.000000
+0 5 1524.000000
+1 1 1540.000000
+1 4 3185.000000
+2 8 1663.000000
+2 9 3500.000000
+3 3 1108.000000
+4 8 2770.000000
+5 2 2675.000000
+5 3 163.000000
+6 0 2063.000000
+6 2 2734.000000
+7 3 1559.000000
+8 7 91.000000
+9 3 769.000000
+9 6 2404.000000
+Academic license - for non-commercial use only
+Variables Modelo gurobi empieza
+Optimize a model with 2894 rows, 525500 columns and 20150 nonzeros
+Variable types: 10000 continuous, 515500 integer (400 binary)
+Coefficient statistics:
+  Matrix range     [5e-03, 2e+05]
+  Objective range  [2e+01, 5e+02]
+  Bounds range     [1e+00, 2e+06]
+  RHS range        [1e+00, 1e+05]
+Found heuristic solution: objective -0.0000000
+Presolve removed 2454 rows and 525018 columns
+Presolve time: 0.35s
+Presolved: 440 rows, 482 columns, 2891 nonzeros
+Variable types: 0 continuous, 482 integer (48 binary)
+
+Root relaxation: objective 3.509214e+06, 331 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3509214.12    0  118   -0.00000 3509214.12      -     -    0s
+H    0     0                    235393.00000 3509214.12  1391%     -    0s
+H    0     0                    970483.00000 3509214.12   262%     -    0s
+H    0     0                    1082289.0000 3509214.12   224%     -    0s
+H    0     0                    1145753.0000 3509214.12   206%     -    0s
+H    0     0                    1314117.0000 3509214.12   167%     -    0s
+H    0     0                    1417191.0000 3509214.12   148%     -    0s
+H    0     0                    1643518.0000 3509214.12   114%     -    0s
+     0     0 3487611.39    0  116 1643518.00 3487611.39   112%     -    0s
+     0     0 3487609.70    0  117 1643518.00 3487609.70   112%     -    0s
+H    0     0                    1881244.0000 3487609.70  85.4%     -    0s
+     0     0 3487403.16    0  119 1881244.00 3487403.16  85.4%     -    0s
+     0     0 3487206.43    0  119 1881244.00 3487206.43  85.4%     -    0s
+     0     0 3487206.25    0  118 1881244.00 3487206.25  85.4%     -    0s
+H    0     0                    2679245.0000 3487206.25  30.2%     -    0s
+     0     0 3486400.91    0  118 2679245.00 3486400.91  30.1%     -    0s
+H    0     0                    2700700.0000 3486400.91  29.1%     -    0s
+     0     0 3486352.98    0  120 2700700.00 3486352.98  29.1%     -    0s
+     0     0 3486352.17    0  120 2700700.00 3486352.17  29.1%     -    0s
+     0     0 3486305.13    0  121 2700700.00 3486305.13  29.1%     -    0s
+     0     0 3486305.13    0  121 2700700.00 3486305.13  29.1%     -    0s
+H    0     0                    2702336.0000 3486305.13  29.0%     -    0s
+     0     2 3486305.13    0  121 2702336.00 3486305.13  29.0%     -    0s
+H   75    37                    2732191.0000 3408441.34  24.8%  46.2    0s
+H  127    54                    2735152.0000 3404975.75  24.5%  34.6    0s
+H  133    53                    2739100.0000 3404975.75  24.3%  33.6    0s
+H  134    43                    2751454.0000 3404975.75  23.8%  33.4    0s
+H  653   309                    2756476.0000 3064302.90  11.2%  12.7    0s
+H  667   276                    2783221.0000 3064302.90  10.1%  12.7    0s
+H  689   236                    2792232.0000 3064302.90  9.74%  12.4    0s
+H  708   226                    2793606.0000 3064302.90  9.69%  12.2    0s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 4
+  MIR: 45
+  StrongCG: 2
+  Flow cover: 2
+
+Explored 1353 nodes (11972 simplex iterations) in 1.05 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 10: 2.79361e+06 2.79223e+06 2.78322e+06 ... 2.7007e+06
+
+Optimal solution found (tolerance 3.00e-02)
+Best objective 2.793606000000e+06, best bound 2.798594000000e+06, gap 0.1786%
+SOLUTION con menos del GAP puesto
+0 4 9 6 1359.000000 2
+0 8 6 0 200.000000 14
+0 11 4 8 308.000000 9
+0 12 1 4 68.000000 3
+0 13 4 8 345.000000 12
+0 13 8 7 340.000000 13
+0 15 1 4 15.000000 15
+0 19 0 5 58.000000 15
+0 22 2 9 7.000000 16
+0 24 5 3 484.000000 17
+0 26 2 9 4.000000 20
+0 27 0 5 2.000000 15
+0 27 8 7 235.000000 14
+0 28 8 7 174.000000 5
+0 32 0 5 76.000000 4
+0 32 9 6 30.000000 19
+0 36 8 7 196.000000 6
+0 37 9 6 345.000000 16
+0 41 5 3 222.000000 20
+0 41 6 0 251.000000 4
+0 42 1 4 1264.000000 14
+0 46 2 9 57.000000 17
+0 47 0 5 475.000000 19
+0 47 6 0 157.000000 12
+1 4 9 6 1398.000000 2
+1 8 6 0 194.000000 14
+1 11 4 8 305.000000 9
+1 13 4 8 366.000000 12
+1 13 8 7 320.000000 13
+1 19 0 5 60.000000 15
+1 24 5 3 490.000000 17
+1 27 0 5 1.000000 15
+1 27 8 7 240.000000 14
+1 28 8 7 180.000000 5
+1 32 0 5 1.000000 4
+1 32 9 6 47.000000 19
+1 36 8 7 198.000000 6
+1 37 9 6 345.000000 16
+1 41 5 3 219.000000 20
+1 41 6 0 301.000000 4
+1 42 1 1 1571.000000 8
+1 46 2 9 546.000000 17
+1 47 0 5 511.000000 19
+1 47 6 0 118.000000 12
+Y: 
+0 0 5 1.000000
+0 1 4 1.000000
+0 2 9 1.000000
+0 4 8 1.000000
+0 5 3 1.000000
+0 6 0 1.000000
+0 8 7 1.000000
+0 9 6 1.000000
+1 0 5 1.000000
+1 1 1 1.000000
+1 2 9 1.000000
+1 4 8 1.000000
+1 5 3 1.000000
+1 6 0 1.000000
+1 8 7 1.000000
+1 9 6 1.000000
+Z: 
+0 0 5 1.000000
+0 2 9 1.000000
+0 4 8 1.000000
+0 5 3 1.000000
+0 6 0 1.000000
+0 8 7 1.000000
+0 9 6 1.000000
+time (t,p,j,k): 
+0 4 9 6 35334.000000
+0 8 6 0 20400.000000
+0 11 4 8 31416.000000
+0 12 1 4 884.000000
+0 13 4 8 52095.000000
+0 13 8 7 24480.000000
+0 15 1 4 1395.000000
+0 19 0 5 8352.000000
+0 22 2 9 1204.000000
+0 24 5 3 49368.000000
+0 26 2 9 636.000000
+0 27 0 5 46.000000
+0 27 8 7 3290.000000
+0 28 8 7 34626.000000
+0 32 0 5 4256.000000
+0 32 9 6 2430.000000
+0 36 8 7 23912.000000
+0 37 9 6 46230.000000
+0 41 5 3 36852.000000
+0 41 6 0 41666.000000
+0 42 1 4 80896.000000
+0 46 2 9 9006.000000
+0 47 0 5 72200.000000
+0 47 6 0 22137.000000
+1 4 9 6 36348.000000
+1 8 6 0 19788.000000
+1 11 4 8 31110.000000
+1 13 4 8 55266.000000
+1 13 8 7 23040.000000
+1 19 0 5 8640.000000
+1 24 5 3 49980.000000
+1 27 0 5 23.000000
+1 27 8 7 3360.000000
+1 28 8 7 35820.000000
+1 32 0 5 56.000000
+1 32 9 6 3807.000000
+1 36 8 7 24156.000000
+1 37 9 6 46230.000000
+1 41 5 3 36354.000000
+1 41 6 0 49966.000000
+1 42 1 1 84834.000000
+1 46 2 9 86268.000000
+1 47 0 5 77672.000000
+1 47 6 0 16638.000000
+SCHED 0
+Molds per Machine
+0 1
+1 0
+2 0
+3 1
+4 1
+5 1
+6 1
+7 1
+8 1
+9 1
+Mold 0visits 1
+Mold 1visits 1
+Mold 2visits 1
+Mold 3visits 0
+Mold 4visits 1
+Mold 5visits 1
+Mold 6visits 1
+Mold 7visits 0
+Mold 8visits 1
+Mold 9visits 1
+MoldMachineAssignment:
+0 5 1
+1 4 1
+2 9 1
+4 8 1
+5 3 1
+6 0 1
+8 7 1
+9 6 1
+Definiendo DummyMolds ...
+
+---- Leyendo maquina 0
+T[6][0] == 86266.000000
+=> CountMoldsMachine[0] == 1, TiempoMaquina[0] == 86400.000000, TiempoLibre[0] == 134.000000, DummyMoldsInMachine[0] == 0
+T[6][0] = 86266.000000
+
+---- Leyendo maquina 1
+=> CountMoldsMachine[1] == 0, TiempoMaquina[1] == 86400.000000, TiempoLibre[1] == 86400.000000, DummyMoldsInMachine[1] == 0
+
+---- Leyendo maquina 2
+=> CountMoldsMachine[2] == 0, TiempoMaquina[2] == 86400.000000, TiempoLibre[2] == 86400.000000, DummyMoldsInMachine[2] == 0
+
+---- Leyendo maquina 3
+T[5][3] == 86383.000000
+=> CountMoldsMachine[3] == 1, TiempoMaquina[3] == 86400.000000, TiempoLibre[3] == 17.000000, DummyMoldsInMachine[3] == 0
+T[5][3] = 86383.000000
+
+---- Leyendo maquina 4
+T[1][4] == 86360.000000
+=> CountMoldsMachine[4] == 1, TiempoMaquina[4] == 86400.000000, TiempoLibre[4] == 40.000000, DummyMoldsInMachine[4] == 0
+T[1][4] = 86360.000000
+
+---- Leyendo maquina 5
+T[0][5] == 86378.000000
+=> CountMoldsMachine[5] == 1, TiempoMaquina[5] == 86400.000000, TiempoLibre[5] == 22.000000, DummyMoldsInMachine[5] == 0
+T[0][5] = 86378.000000
+
+---- Leyendo maquina 6
+T[9][6] == 86398.000000
+=> CountMoldsMachine[6] == 1, TiempoMaquina[6] == 86400.000000, TiempoLibre[6] == 2.000000, DummyMoldsInMachine[6] == 0
+T[9][6] = 86398.000000
+
+---- Leyendo maquina 7
+T[8][7] == 86399.000000
+=> CountMoldsMachine[7] == 1, TiempoMaquina[7] == 86400.000000, TiempoLibre[7] == 1.000000, DummyMoldsInMachine[7] == 0
+T[8][7] = 86399.000000
+
+---- Leyendo maquina 8
+T[4][8] == 86281.000000
+=> CountMoldsMachine[8] == 1, TiempoMaquina[8] == 86400.000000, TiempoLibre[8] == 119.000000, DummyMoldsInMachine[8] == 0
+T[4][8] = 86281.000000
+
+---- Leyendo maquina 9
+T[2][9] == 14346.000000
+=> MoldesReales[9] == 1
+=> MoldesDummy[9] == log(20.014999/log(2)) + 1 == 6
+=> CountMoldsMachine[9] == 7, TiempoMaquina[9] == 86400.000000, TiempoLibre[9] == 72054.000000, 
+T[10][9] = 36027.000000
+T[11][9] = 18013.500000
+T[12][9] = 9006.750000
+T[13][9] = 4503.375000
+T[14][9] = 2251.687500
+T[15][9] = 2251.687500
+T[2][9] = 14346.000000
+listo!!!
+N_DummyMolds = 6
+Academic license - for non-commercial use only
+Optimize a model with 11395 rows, 13530 columns and 19503 nonzeros
+Variable types: 5210 continuous, 8320 integer (8320 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+04]
+Presolve removed 11362 rows and 13464 columns
+Presolve time: 0.01s
+Presolved: 33 rows, 66 columns, 162 nonzeros
+Variable types: 0 continuous, 66 integer (66 binary)
+Found heuristic solution: objective 4669.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 1: 4669 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 4.669000000000e+03, best bound 4.669000000000e+03, gap 0.0000%
+SOLUTION FACTIBLE:
+ ---- Maquina 0
+6(86266.000000) 
+ ---- Maquina 1
+
+ ---- Maquina 2
+
+ ---- Maquina 3
+5(86383.000000) 
+ ---- Maquina 4
+1(86360.000000) 
+ ---- Maquina 5
+0(86378.000000) 
+ ---- Maquina 6
+9(86398.000000) 
+ ---- Maquina 7
+8(86399.000000) 
+ ---- Maquina 8
+4(86281.000000) 
+ ---- Maquina 9
+Dummy(18013.500000) Dummy(2251.687500) Dummy(36027.000000) Dummy(2251.687500) Dummy(4503.375000) Dummy(9006.750000) 2(14346.000000) 
+SCHED 1
+Molds per Machine
+0 1
+1 1
+2 0
+3 1
+4 0
+5 1
+6 1
+7 1
+8 1
+9 1
+Mold 0visits 1
+Mold 1visits 1
+Mold 2visits 1
+Mold 3visits 0
+Mold 4visits 1
+Mold 5visits 1
+Mold 6visits 1
+Mold 7visits 0
+Mold 8visits 1
+Mold 9visits 1
+MoldMachineAssignment:
+0 5 1
+1 1 1
+2 9 1
+4 8 1
+5 3 1
+6 0 1
+8 7 1
+9 6 1
+Definiendo DummyMolds ...
+
+---- Leyendo maquina 0
+T[6][0] == 86392.000000
+=> CountMoldsMachine[0] == 1, TiempoMaquina[0] == 86400.000000, TiempoLibre[0] == 8.000000, DummyMoldsInMachine[0] == 0
+T[6][0] = 86392.000000
+
+---- Leyendo maquina 1
+T[1][1] == 86374.000000
+=> CountMoldsMachine[1] == 1, TiempoMaquina[1] == 86400.000000, TiempoLibre[1] == 26.000000, DummyMoldsInMachine[1] == 0
+T[1][1] = 86374.000000
+
+---- Leyendo maquina 2
+=> CountMoldsMachine[2] == 0, TiempoMaquina[2] == 86400.000000, TiempoLibre[2] == 86400.000000, DummyMoldsInMachine[2] == 0
+
+---- Leyendo maquina 3
+T[5][3] == 86334.000000
+=> CountMoldsMachine[3] == 1, TiempoMaquina[3] == 86400.000000, TiempoLibre[3] == 66.000000, DummyMoldsInMachine[3] == 0
+T[5][3] = 86334.000000
+
+---- Leyendo maquina 4
+=> CountMoldsMachine[4] == 0, TiempoMaquina[4] == 86400.000000, TiempoLibre[4] == 86400.000000, DummyMoldsInMachine[4] == 0
+
+---- Leyendo maquina 5
+T[0][5] == 86391.000000
+=> CountMoldsMachine[5] == 1, TiempoMaquina[5] == 86400.000000, TiempoLibre[5] == 9.000000, DummyMoldsInMachine[5] == 0
+T[0][5] = 86391.000000
+
+---- Leyendo maquina 6
+T[9][6] == 86385.000000
+=> CountMoldsMachine[6] == 1, TiempoMaquina[6] == 86400.000000, TiempoLibre[6] == 15.000000, DummyMoldsInMachine[6] == 0
+T[9][6] = 86385.000000
+
+---- Leyendo maquina 7
+T[8][7] == 86376.000000
+=> CountMoldsMachine[7] == 1, TiempoMaquina[7] == 86400.000000, TiempoLibre[7] == 24.000000, DummyMoldsInMachine[7] == 0
+T[8][7] = 86376.000000
+
+---- Leyendo maquina 8
+T[4][8] == 86376.000000
+=> CountMoldsMachine[8] == 1, TiempoMaquina[8] == 86400.000000, TiempoLibre[8] == 24.000000, DummyMoldsInMachine[8] == 0
+T[4][8] = 86376.000000
+
+---- Leyendo maquina 9
+T[2][9] == 86268.000000
+=> CountMoldsMachine[9] == 1, TiempoMaquina[9] == 86400.000000, TiempoLibre[9] == 132.000000, DummyMoldsInMachine[9] == 0
+T[2][9] = 86268.000000
+listo!!!
+N_DummyMolds = 0
+Academic license - for non-commercial use only
+Optimize a model with 6177 rows, 9150 columns and 10825 nonzeros
+Variable types: 5150 continuous, 4000 integer (4000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+04]
+Found heuristic solution: objective 116811.00000
+Presolve removed 6177 rows and 9150 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 12 available processors)
+
+Solution count 1: 116811 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 1.168110000000e+05, best bound 1.168110000000e+05, gap 0.0000%
+SOLUTION FACTIBLE:
+ ---- Maquina 0
+6(86392.000000) 
+ ---- Maquina 1
+1(86374.000000) 
+ ---- Maquina 2
+
+ ---- Maquina 3
+5(86334.000000) 
+ ---- Maquina 4
+
+ ---- Maquina 5
+0(86391.000000) 
+ ---- Maquina 6
+9(86385.000000) 
+ ---- Maquina 7
+8(86376.000000) 
+ ---- Maquina 8
+4(86376.000000) 
+ ---- Maquina 9
+2(86268.000000) 
+iterFactibilidad 1
