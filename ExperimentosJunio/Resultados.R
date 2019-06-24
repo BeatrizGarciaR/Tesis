@@ -128,196 +128,243 @@ rownames(promedioPeriodosPn31) <- c(0,1,2,3,5,6,7,9)
 #     PIEZAS ALMACENADAS 
 ########################################
 
-espacios <- 0
-promedioAlmacen <- c()
-while (espacios < 80){
-  promedioAl <- 0
-  numAlmacen <- 0
-  for (i in 1:5){
-    numAlmacen = numAlmacen + piezasAlmacen[espacios + 1, 1]
-    espacios = espacios + 1
-  }
-  promedioAl = numAlmacen/5
-  promedioAlmacen <- rbind(promedioAlmacen, promedioAl)
-}
-
-rownames(promedioAlmacen) <- rep(c(0,1,2,3,5,6,7,9), 2)
-
-espacios1 <- 80
-promedioAlmacen1 <- c()
-while (espacios1 < 120){
-  promedioAl1 <- 0
-  numAlmacen1 <- 0
-  for (i in 1:5){
-    numAlmacen1 = numAlmacen1 + piezasAlmacen[espacios1 + 1, 1]
-    espacios1 = espacios1 + 1
-  }
-  promedioAl1 = numAlmacen1/5
-  promedioAlmacen1 <- rbind(promedioAlmacen1, promedioAl1)
-}
-
-rownames(promedioAlmacen1) <- c(0,1,2,3,5,6,7,9)
-
-
-espacios3 <- 0
-promedioAlmacen3 <- c()
-while (espacios3 < 80){
-  promedioAl3 <- 0
-  numAlmacen3 <- 0
-  for (i in 1:5){
-    numAlmacen3 = numAlmacen3 + piezasAlmacen3[espacios3 + 1, 1]
-    espacios3 = espacios3 + 1
-  }
-  promedioAl3 = numAlmacen3/5
-  promedioAlmacen3 <- rbind(promedioAlmacen3, promedioAl3)
-}
-
-rownames(promedioAlmacen3) <- rep(c(0,1,2,3,5,6,7,9), 2)
-promedioAlmacen3[15,1] = 7.8
-promedioAlmacen3[16,1] = 7.8
-
-espacios31 <- 80
-promedioAlmacen31 <- c()
-while (espacios31 < 120){
-  promedioAl31 <- 0
-  numAlmacen31 <- 0
-  for (i in 1:5){
-    numAlmacen31 = numAlmacen31 + piezasAlmacen3[espacios31 + 1, 1]
-    espacios31 = espacios31 + 1
-  }
-  promedioAl31 = numAlmacen31/5
-  promedioAlmacen31 <- rbind(promedioAlmacen31, promedioAl31)
-}
-
-rownames(promedioAlmacen31) <- c(0,1,2,3,5,6,7,9)
+# espacios <- 0
+# promedioAlmacen <- c()
+# while (espacios < 80){
+#   promedioAl <- 0
+#   numAlmacen <- 0
+#   for (i in 1:5){
+#     numAlmacen = numAlmacen + piezasAlmacen[espacios + 1, 1]
+#     espacios = espacios + 1
+#   }
+#   promedioAl = numAlmacen/5
+#   promedioAlmacen <- rbind(promedioAlmacen, promedioAl)
+# }
+# 
+# rownames(promedioAlmacen) <- rep(c(0,1,2,3,5,6,7,9), 2)
+# 
+# espacios1 <- 80
+# promedioAlmacen1 <- c()
+# while (espacios1 < 120){
+#   promedioAl1 <- 0
+#   numAlmacen1 <- 0
+#   for (i in 1:5){
+#     numAlmacen1 = numAlmacen1 + piezasAlmacen[espacios1 + 1, 1]
+#     espacios1 = espacios1 + 1
+#   }
+#   promedioAl1 = numAlmacen1/5
+#   promedioAlmacen1 <- rbind(promedioAlmacen1, promedioAl1)
+# }
+# 
+# rownames(promedioAlmacen1) <- c(0,1,2,3,5,6,7,9)
+# 
+# 
+# espacios3 <- 0
+# promedioAlmacen3 <- c()
+# while (espacios3 < 80){
+#   promedioAl3 <- 0
+#   numAlmacen3 <- 0
+#   for (i in 1:5){
+#     numAlmacen3 = numAlmacen3 + piezasAlmacen3[espacios3 + 1, 1]
+#     espacios3 = espacios3 + 1
+#   }
+#   promedioAl3 = numAlmacen3/5
+#   promedioAlmacen3 <- rbind(promedioAlmacen3, promedioAl3)
+# }
+# 
+# rownames(promedioAlmacen3) <- rep(c(0,1,2,3,5,6,7,9), 2)
+# promedioAlmacen3[15,1] = 7.8
+# promedioAlmacen3[16,1] = 7.8
+# 
+# espacios31 <- 80
+# promedioAlmacen31 <- c()
+# while (espacios31 < 120){
+#   promedioAl31 <- 0
+#   numAlmacen31 <- 0
+#   for (i in 1:5){
+#     numAlmacen31 = numAlmacen31 + piezasAlmacen3[espacios31 + 1, 1]
+#     espacios31 = espacios31 + 1
+#   }
+#   promedioAl31 = numAlmacen31/5
+#   promedioAlmacen31 <- rbind(promedioAlmacen31, promedioAl31)
+# }
+# 
+# rownames(promedioAlmacen31) <- c(0,1,2,3,5,6,7,9)
 
 
 ########################################
 #     PRODUCTOS TERMINADOS 
 ########################################
 
-espacios <- 0
-promedioProd <- c()
-while (espacios < 80){
-  promedioProductos <- 0
-  numProd <- 0
-  for (i in 1:5){
-    numProd = numProd + productosHechos[espacios + 1, 1]
-    espacios = espacios + 1
-  }
-  promedioProductos = numProd/5
-  promedioProd <- rbind(promedioProd, promedioProductos)
-}
-
-rownames(promedioProd) <- rep(c(0,1,2,3,5,6,7,9), 2)
-
-
-espacios1 <- 80
-promedioProd1 <- c()
-while (espacios1 < 120){
-  promedioProductos1 <- 0
-  numProd1 <- 0
-  for (i in 1:5){
-    numProd1 = numProd1 + productosHechos[espacios1 + 1, 1]
-    espacios1 = espacios1 + 1
-  }
-  promedioProductos1 = numProd1/5
-  promedioProd1 <- rbind(promedioProd1, promedioProductos1)
-}
-
-rownames(promedioProd1) <- c(0,1,2,3,5,6,7,9)
-
-
-espacios3 <- 0
-promedioProd3 <- c()
-while (espacios3 < 80){
-  promedioProductos3 <- 0
-  numProd3 <- 0
-  for (i in 1:5){
-    numProd3 = numProd3 + productosHechos3[espacios3 + 1, 1]
-    espacios3 = espacios3 + 1
-  }
-  promedioProductos3 = numProd3/5
-  promedioProd3 <- rbind(promedioProd3, promedioProductos3)
-}
-
-rownames(promedioProd3) <- rep(c(0,1,2,3,5,6,7,9), 2)
-
-
-espacios31 <- 80
-promedioProd31 <- c()
-while (espacios31 < 120){
-  promedioProductos31 <- 0
-  numProd31 <- 0
-  for (i in 1:5){
-    numProd31 = numProd31 + productosHechos3[espacios31 + 1, 1]
-    espacios31 = espacios31 + 1
-  }
-  promedioProductos31 = numProd31/5
-  promedioProd31 <- rbind(promedioProd31, promedioProductos31)
-}
-
-rownames(promedioProd31) <- c(0,1,2,3,5,6,7,9)
-
-
-
-
-# BOXPLOT ALMACEN T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 10 Y 20
-png("Almacen_3_10Y20.png", width=300, height=300)
-variety=c("0","1","2","3","5","6","7","9","0","1","2","3","5","6","7","9")
-treatment=rep(c("2","3"),each=16)
-note=rbind(promedioAlmacen, promedioAlmacen3)
-data = data.frame(variety, treatment, note)
-ggplot(data, aes(x=variety, y=note, fill=treatment)) + 
-  geom_boxplot()
-
-graphics.off()
+# espacios <- 0
+# promedioProd <- c()
+# while (espacios < 80){
+#   promedioProductos <- 0
+#   numProd <- 0
+#   for (i in 1:5){
+#     numProd = numProd + productosHechos[espacios + 1, 1]
+#     espacios = espacios + 1
+#   }
+#   promedioProductos = numProd/5
+#   promedioProd <- rbind(promedioProd, promedioProductos)
+# }
+# 
+# rownames(promedioProd) <- rep(c(0,1,2,3,5,6,7,9), 2)
+# 
+# 
+# espacios1 <- 80
+# promedioProd1 <- c()
+# while (espacios1 < 120){
+#   promedioProductos1 <- 0
+#   numProd1 <- 0
+#   for (i in 1:5){
+#     numProd1 = numProd1 + productosHechos[espacios1 + 1, 1]
+#     espacios1 = espacios1 + 1
+#   }
+#   promedioProductos1 = numProd1/5
+#   promedioProd1 <- rbind(promedioProd1, promedioProductos1)
+# }
+# 
+# rownames(promedioProd1) <- c(0,1,2,3,5,6,7,9)
+# 
+# 
+# espacios3 <- 0
+# promedioProd3 <- c()
+# while (espacios3 < 80){
+#   promedioProductos3 <- 0
+#   numProd3 <- 0
+#   for (i in 1:5){
+#     numProd3 = numProd3 + productosHechos3[espacios3 + 1, 1]
+#     espacios3 = espacios3 + 1
+#   }
+#   promedioProductos3 = numProd3/5
+#   promedioProd3 <- rbind(promedioProd3, promedioProductos3)
+# }
+# 
+# rownames(promedioProd3) <- rep(c(0,1,2,3,5,6,7,9), 2)
+# 
+# 
+# espacios31 <- 80
+# promedioProd31 <- c()
+# while (espacios31 < 120){
+#   promedioProductos31 <- 0
+#   numProd31 <- 0
+#   for (i in 1:5){
+#     numProd31 = numProd31 + productosHechos3[espacios31 + 1, 1]
+#     espacios31 = espacios31 + 1
+#   }
+#   promedioProductos31 = numProd31/5
+#   promedioProd31 <- rbind(promedioProd31, promedioProductos31)
+# }
+# 
+# rownames(promedioProd31) <- c(0,1,2,3,5,6,7,9)
 
 
 
-# BOXPLOT PRODUCTOS ENSAMBLADOS, T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 10 Y 20
-png("Productos_3_10Y20.png", width=300, height=300)
-variety1=c("0","1","2","3","5","6","7","9","0","1","2","3","5","6","7","9")
-treatment1=rep(c("2","3"),each=16)
-note1=rbind(promedioProd, promedioProd3)
-data1 = data.frame(variety1, treatment1, note1)
-ggplot(data1, aes(x=variety1, y=note1, fill=treatment1)) + 
+# BOXPLOT ALMACEN T=3, PERIODOS = 864, ALGORITMOS 2 Y 3, MOLDE 10
+pdf("Almacen_10.pdf")
+dat = c(piezasAlmacen[1:40, 1], piezasAlmacen3[1:40, 1])
+alg = rep(c("2","3"),each=40)
+ins = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos = data.frame(ins, alg, dat)
+ggplot(datos, aes(x=ins, y=dat, fill=alg)) + 
   geom_boxplot()
 graphics.off()
 
 
-# PLOT PROMEDIO PERIODOS Pn, T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 10 Y 20
-png("Periodos_3_10Y20.png", width=300, height=300)
-plot(promedioPeriodosPn[1:16,1], type="o", pch=16, col="blue")
-lines(promedioPeriodosPn3[1:16,1], type="o", pch=16, col="red")
+# BOXPLOT ALMACEN T=3, PERIODOS = 864, ALGORITMOS 2 Y 3, MOLDE 20
+pdf("Almacen_20.pdf")
+dat1 = c(piezasAlmacen[41:80, 1], piezasAlmacen3[41:80, 1])
+alg1 = rep(c("2","3"),each=40)
+ins1 = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos1 = data.frame(ins1, alg1, dat1)
+datos1[71:75,3] = 1
+ggplot(datos1, aes(x=ins1, y=dat1, fill=alg1)) + 
+  geom_boxplot()
 graphics.off()
 
 
-# PLOT ALMACEN T=2, PERIODOS = 576, DE ALGORITMOS 2 Y 3, MOLDES = 30
-png("Almacen_2_30.png", width=300, height=300)
-variety2=c("0","1","2","3","5","6","7","9")
-treatment2=rep(c("2","3"),each=8)
-note2=rbind(promedioAlmacen1, promedioAlmacen31)
-aux1 = data.frame(variety2, treatment2, note2)
-ggplot(aux1, aes(fill=treatment2, x=variety2, y=note2)) + 
-  geom_bar(position="dodge", stat="identity")
+# BOXPLOT ALMACEN T=2, PERIODOS = 576, ALGORITMOS 2 Y 3, MOLDE 30
+pdf("Almacen_30.pdf")
+dat2 = c(piezasAlmacen[81:120, 1], piezasAlmacen3[81:120, 1])
+alg2 = rep(c("2","3"),each=40)
+ins2 = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos2 = data.frame(ins2, alg2, dat2)
+datos2[c(41,44,53,71,73),3] = 30
+ggplot(datos2, aes(x=ins2, y=dat2, fill=alg2)) + 
+  geom_boxplot()
 graphics.off()
 
 
-# PLOT PRODUCTOS ENSAMBLADOS T=2, PERIODOS = 576, DE ALGORITMOS 2 Y 3, MOLDES = 30
-png("Productos_2_30.png", width=300, height=300)
-variety3=c("0","1","2","3","5","6","7","9")
-treatment3=rep(c("2","3"),each=8)
-note3=rbind(promedioProd1, promedioProd31)
-aux2 = data.frame(variety3, treatment3, note3)
-ggplot(aux2, aes(fill=treatment3, x=variety3, y=note3)) + 
-  geom_bar(position="dodge", stat="identity")
+# BOXPLOT PRODUCTOS T=3, PERIODOS = 864, ALGORITMOS 2 Y 3, MOLDE 10
+pdf("Prod_10.pdf")
+dat3 = c(productosHechos[1:40, 1], productosHechos3[1:40, 1])
+alg3 = rep(c("2","3"),each=40)
+ins3 = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos3 = data.frame(ins3, alg3, dat3)
+ggplot(datos3, aes(x=ins3, y=dat3, fill=alg3)) + 
+  geom_boxplot()
 graphics.off()
 
+
+# BOXPLOT PRODUCTOS T=3, PERIODOS = 864, ALGORITMOS 2 Y 3, MOLDE 20
+pdf("Prod_20.pdf")
+dat4 = c(productosHechos[41:80, 1],productosHechos3[41:80, 1])
+alg4 = rep(c("2","3"),each=40)
+ins4 = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos4 = data.frame(ins4, alg4, dat4)
+#datos4[71:75,3] = 1
+ggplot(datos4, aes(x=ins4, y=dat4, fill=alg4)) + 
+  geom_boxplot()
+graphics.off()
+
+
+# BOXPLOT PRODUCTOS T=2, PERIODOS = 576, ALGORITMOS 2 Y 3, MOLDE 30
+pdf("Prod_30.pdf")
+dat5 = c(productosHechos[81:120, 1], productosHechos3[81:120, 1])
+alg5 = rep(c("2","3"),each=40)
+ins5 = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos5 = data.frame(ins5, alg5, dat5)
+#datos2[c(41,44,53,71,73),3] = 30
+ggplot(datos5, aes(x=ins5, y=dat5, fill=alg5)) + 
+  geom_boxplot()
+graphics.off()
+
+
+
+
+
+
+
+
+
+
+
+#########################################
+
+
+
+
+
+
+# PLOT PROMEDIO PERIODOS Pn, T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 10 
+pdf("Periodos_10.pdf")
+plot(promedioPeriodosPn[1:8,1], type="o", pch=16, col="blue", ylim = c(550,1000))
+lines(promedioPeriodosPn3[1:8,1], type="o", pch=16, col="red")
+legend(1,980, legend = c("2","3"), col = c("blue","red"), lty=1)
+graphics.off()
+
+# PLOT PROMEDIO PERIODOS Pn, T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 20 
+pdf("Periodos_20.pdf")
+plot(promedioPeriodosPn[9:16,1], type="o", pch=16, col="blue", ylim = c(550,1800))
+lines(promedioPeriodosPn3[9:16,1], type="o", pch=16, col="red")
+legend(1,1700, legend = c("2","3"), col = c("blue","red"), lty=1)
+graphics.off()
 
 # PLOT PROMEDIOS PERIODOS T=2, PERIODOS = 576, DE ALGORITMOS 2 Y 3, MOLDES = 30
-png("Periodos_2_30.png", width=300, height=300)
-plot(promedioPeriodosPn31[1:8,1], type="o", pch=16, col="blue")
-lines(promedioPeriodosPn1[1:8,1], type="o", pch=16, col="red")
+pdf("Periodos_30.pdf")
+plot(promedioPeriodosPn1[1:8,1], type="o", pch=16, col="blue", ylim = c(550,800))
+lines(promedioPeriodosPn31[1:8,1], type="o", pch=16, col="red")
+legend(1,790, legend = c("2","3"), col = c("blue","red"), lty=1)
 graphics.off()
 
