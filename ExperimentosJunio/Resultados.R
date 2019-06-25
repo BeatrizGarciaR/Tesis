@@ -263,108 +263,92 @@ rownames(promedioPeriodosPn31) <- c(0,1,2,3,5,6,7,9)
 
 # BOXPLOT ALMACEN T=3, PERIODOS = 864, ALGORITMOS 2 Y 3, MOLDE 10
 pdf("Almacen_10.pdf")
-dat = c(piezasAlmacen[1:40, 1], piezasAlmacen3[1:40, 1])
-alg = rep(c("2","3"),each=40)
-ins = rep(c("0","1","2","3","5","6","7","9"), each=5)
-datos = data.frame(ins, alg, dat)
-ggplot(datos, aes(x=ins, y=dat, fill=alg)) + 
+PiezasAlmacenadas = c(piezasAlmacen[1:40, 1], piezasAlmacen3[1:40, 1])
+Algoritmos = rep(c("2","3"),each=40)
+Instancias = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos = data.frame(Instancias, Algoritmos, PiezasAlmacenadas)
+ggplot(datos, aes(x=Instancias, y=PiezasAlmacenadas, fill=Algoritmos)) + 
   geom_boxplot()
 graphics.off()
 
 
 # BOXPLOT ALMACEN T=3, PERIODOS = 864, ALGORITMOS 2 Y 3, MOLDE 20
 pdf("Almacen_20.pdf")
-dat1 = c(piezasAlmacen[41:80, 1], piezasAlmacen3[41:80, 1])
-alg1 = rep(c("2","3"),each=40)
-ins1 = rep(c("0","1","2","3","5","6","7","9"), each=5)
-datos1 = data.frame(ins1, alg1, dat1)
+Piezas_Almacenadas = c(piezasAlmacen[41:80, 1], piezasAlmacen3[41:80, 1])
+Algoritmos = rep(c("2","3"),each=40)
+Instancias = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos1 = data.frame(Instancias, Algoritmos, Piezas_Almacenadas)
 datos1[71:75,3] = 1
-ggplot(datos1, aes(x=ins1, y=dat1, fill=alg1)) + 
+ggplot(datos1, aes(x=Instancias, y=Piezas_Almacenadas, fill=Algoritmos)) + 
   geom_boxplot()
 graphics.off()
 
 
 # BOXPLOT ALMACEN T=2, PERIODOS = 576, ALGORITMOS 2 Y 3, MOLDE 30
 pdf("Almacen_30.pdf")
-dat2 = c(piezasAlmacen[81:120, 1], piezasAlmacen3[81:120, 1])
-alg2 = rep(c("2","3"),each=40)
-ins2 = rep(c("0","1","2","3","5","6","7","9"), each=5)
-datos2 = data.frame(ins2, alg2, dat2)
+Piezas_Almacenadas = c(piezasAlmacen[81:120, 1], piezasAlmacen3[81:120, 1])
+Algoritmos = rep(c("2","3"),each=40)
+Instancias = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos2 = data.frame(Instancias, Algoritmos, Piezas_Almacenadas)
 datos2[c(41,44,53,71,73),3] = 30
-ggplot(datos2, aes(x=ins2, y=dat2, fill=alg2)) + 
+ggplot(datos2, aes(x=Instancias, y=Piezas_Almacenadas, fill=Algoritmos)) + 
   geom_boxplot()
 graphics.off()
 
 
 # BOXPLOT PRODUCTOS T=3, PERIODOS = 864, ALGORITMOS 2 Y 3, MOLDE 10
 pdf("Prod_10.pdf")
-dat3 = c(productosHechos[1:40, 1], productosHechos3[1:40, 1])
-alg3 = rep(c("2","3"),each=40)
-ins3 = rep(c("0","1","2","3","5","6","7","9"), each=5)
-datos3 = data.frame(ins3, alg3, dat3)
-ggplot(datos3, aes(x=ins3, y=dat3, fill=alg3)) + 
+Productos_Ensamblados = c(productosHechos[1:40, 1], productosHechos3[1:40, 1])
+Algoritmos = rep(c("2","3"),each=40)
+Instancias = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos3 = data.frame(Instancias, Algoritmos, Productos_Ensamblados)
+ggplot(datos3, aes(x=Instancias, y=Productos_Ensamblados, fill=Algoritmos)) + 
   geom_boxplot()
 graphics.off()
 
 
 # BOXPLOT PRODUCTOS T=3, PERIODOS = 864, ALGORITMOS 2 Y 3, MOLDE 20
 pdf("Prod_20.pdf")
-dat4 = c(productosHechos[41:80, 1],productosHechos3[41:80, 1])
-alg4 = rep(c("2","3"),each=40)
-ins4 = rep(c("0","1","2","3","5","6","7","9"), each=5)
-datos4 = data.frame(ins4, alg4, dat4)
+Productos_Ensamblados = c(productosHechos[41:80, 1],productosHechos3[41:80, 1])
+Algoritmos = rep(c("2","3"),each=40)
+Instancias = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos4 = data.frame(Instancias, Algoritmos, Productos_Ensamblados)
 #datos4[71:75,3] = 1
-ggplot(datos4, aes(x=ins4, y=dat4, fill=alg4)) + 
+ggplot(datos4, aes(x=Instancias, y=Productos_Ensamblados, fill=Algoritmos)) + 
   geom_boxplot()
 graphics.off()
 
 
 # BOXPLOT PRODUCTOS T=2, PERIODOS = 576, ALGORITMOS 2 Y 3, MOLDE 30
 pdf("Prod_30.pdf")
-dat5 = c(productosHechos[81:120, 1], productosHechos3[81:120, 1])
-alg5 = rep(c("2","3"),each=40)
-ins5 = rep(c("0","1","2","3","5","6","7","9"), each=5)
-datos5 = data.frame(ins5, alg5, dat5)
+Productos_Ensamblados = c(productosHechos[81:120, 1], productosHechos3[81:120, 1])
+Algoritmos = rep(c("2","3"),each=40)
+Instancias = rep(c("0","1","2","3","5","6","7","9"), each=5)
+datos5 = data.frame(Instancias, Algoritmos, Productos_Ensamblados)
 #datos2[c(41,44,53,71,73),3] = 30
-ggplot(datos5, aes(x=ins5, y=dat5, fill=alg5)) + 
+ggplot(datos5, aes(x=Instancias, y=Productos_Ensamblados, fill=Algoritmos)) + 
   geom_boxplot()
 graphics.off()
 
 
-
-
-
-
-
-
-
-
-
-#########################################
-
-
-
-
-
-
 # PLOT PROMEDIO PERIODOS Pn, T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 10 
 pdf("Periodos_10.pdf")
-plot(promedioPeriodosPn[1:8,1], type="o", pch=16, col="blue", ylim = c(550,1000))
+plot(promedioPeriodosPn[1:8,1], type="o", pch=16, col="blue", ylim = c(550,1000), xlab="Instancias", ylab="Periodos promedio")
 lines(promedioPeriodosPn3[1:8,1], type="o", pch=16, col="red")
-legend(1,980, legend = c("2","3"), col = c("blue","red"), lty=1)
+legend(1,980, legend = c("Algoritmo 2","Algoritmo 3"), col = c("blue","red"), lty=1)
 graphics.off()
 
 # PLOT PROMEDIO PERIODOS Pn, T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 20 
 pdf("Periodos_20.pdf")
-plot(promedioPeriodosPn[9:16,1], type="o", pch=16, col="blue", ylim = c(550,1800))
+plot(promedioPeriodosPn[9:16,1], type="o", pch=16, col="blue", ylim = c(550,1800), xlab="Instancias", ylab="Periodos promedio")
 lines(promedioPeriodosPn3[9:16,1], type="o", pch=16, col="red")
-legend(1,1700, legend = c("2","3"), col = c("blue","red"), lty=1)
+legend(1,1700, legend = c("Algoritmo 2","Algoritmo 3"), col = c("blue","red"), lty=1)
 graphics.off()
 
 # PLOT PROMEDIOS PERIODOS T=2, PERIODOS = 576, DE ALGORITMOS 2 Y 3, MOLDES = 30
 pdf("Periodos_30.pdf")
-plot(promedioPeriodosPn1[1:8,1], type="o", pch=16, col="blue", ylim = c(550,800))
+plot(promedioPeriodosPn1[1:8,1], type="o", pch=16, col="blue", ylim = c(550,800), xlab="Instancias", ylab="Periodos promedio")
 lines(promedioPeriodosPn31[1:8,1], type="o", pch=16, col="red")
-legend(1,790, legend = c("2","3"), col = c("blue","red"), lty=1)
+legend(1,790, legend = c("Algoritmo 2","Algoritmo 3"), col = c("blue","red"), lty=1)
 graphics.off()
 
