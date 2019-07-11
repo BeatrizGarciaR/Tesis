@@ -333,21 +333,21 @@ graphics.off()
 
 # PLOT PROMEDIO PERIODOS Pn, T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 10 
 pdf("Periodos_10.pdf", width = 7.5, height = 4.5)
-plot(promedioPeriodosPn[1:8,1], type="o", pch=16, col="blue", ylim = c(550,1000), xlab="Instancias", ylab="Periodos promedio", cex.lab=1.2)
+plot(promedioPeriodosPn[1:8,1], type="o", pch=16, col="blue", ylim = c(550,1000), xlab="Instancias", ylab="Periodos promedio", cex.lab=1.2, xaxt="n")
 lines(promedioPeriodosPn3[1:8,1], type="o", pch=16, col="red")
 legend(1,800, legend = c("Algoritmo 2","Algoritmo 3"), col = c("blue","red"), lty=1)
 graphics.off()
 
 # PLOT PROMEDIO PERIODOS Pn, T=3, PERIODOS = 864, DE ALGORITMOS 2 Y 3, MOLDES = 20 
 pdf("Periodos_20.pdf", width = 7.5, height = 4.5)
-plot(promedioPeriodosPn[9:16,1], type="o", pch=16, col="blue", ylim = c(550,1800), xlab="Instancias", ylab="Periodos promedio", cex.lab=1.2)
+plot(promedioPeriodosPn[9:16,1], type="o", pch=16, col="blue", ylim = c(550,1800), xlab="Instancias", ylab="Periodos promedio", cex.lab=1.2, xaxt="n")
 lines(promedioPeriodosPn3[9:16,1], type="o", pch=16, col="red")
 legend(1,1700, legend = c("Algoritmo 2","Algoritmo 3"), col = c("blue","red"), lty=1)
 graphics.off()
 
 # PLOT PROMEDIOS PERIODOS T=2, PERIODOS = 576, DE ALGORITMOS 2 Y 3, MOLDES = 30
 pdf("Periodos_30.pdf", width = 7.5, height = 4.5)
-plot(promedioPeriodosPn1[1:8,1], type="o", pch=16, col="blue", ylim = c(550,800), xlab="Instancias", ylab="Periodos promedio", cex.lab=1.2)
+plot(promedioPeriodosPn1[1:8,1], type="o", pch=16, col="blue", ylim = c(550,800), xlab="Instancias", ylab="Periodos promedio", cex.lab=1.2, xaxt="n")
 lines(promedioPeriodosPn31[1:8,1], type="o", pch=16, col="red")
 legend(1,790, legend = c("Algoritmo 2","Algoritmo 3"), col = c("blue","red"), lty=1)
 graphics.off()
